@@ -8,7 +8,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="combine_re_compile",  #
-    version="0.0.2",
+    version="0.0.3",
     author="landybird",
     author_email="1442172978@qq.com",
     description="combine re compile",
