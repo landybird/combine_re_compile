@@ -1,6 +1,6 @@
 # 任意组合 re.compile 
 
-[![PyPI version](https://badge.fury.io/py/hot-magnet.svg)](https://pypi.org/project/hot-magnet/) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![PyPI version](https://badge.fury.io/py/combine-re-compile.svg)](https://pypi.org/project/combine-re-compile/) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
 > 兼容环境

@@ -1,0 +1,8 @@
+README.md
+setup.py
+combine_re_compile/__init__.py
+combine_re_compile/tests.py
+combine_re_compile.egg-info/PKG-INFO
+combine_re_compile.egg-info/SOURCES.txt
+combine_re_compile.egg-info/dependency_links.txt
+combine_re_compile.egg-info/top_level.txt
