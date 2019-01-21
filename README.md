@@ -3,6 +3,59 @@
 [![PyPI version](https://badge.fury.io/py/combine-re-compile.svg)](https://pypi.org/project/combine-re-compile/) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
+例如: 
+
+
+匹配 `一个数字`的` re.compile` 表达式
+
+```python
+
+DIGIT_PATTERN = re.compile(r"""
+    (?P<my_digit_pattern>        # start named group
+      \d                         # 1  integer
+    )                            # close named group
+    """, re.VERBOSE)
+
+```
+
+匹配`一个字符`的 `re.compile `表达式
+
+```python
+
+
+CHAR_PATTERN = re.compile(r"""
+    (?P<my_char_pattern>         # start named group
+      [a-z]                      # a character
+    )                            # close named group
+    """, re.VERBOSE)
+
+
+```
+
+组合到一起:
+
+```python
+
+#  pip install combine_re_compile
+
+from combine_re_compile import CombinationPattern
+
+c = CombinationPattern(DIGIT_PATTERN,CHAR_PATTERN,CHAR_PATTERN,DIGIT_PATTERN, new_pattern_name="new_pattern_name" )
+new_pattern = c.get_new_pattern
+
+match_result = new_pattern.search("3d311dd1dsad3").group("new_pattern_name")
+print(match_result)
+# >> 1dd1
+
+
+```
+
+
+
+
+
+
+
 > 兼容环境
 
 `Windows`/`Linux`/`MacOs`
